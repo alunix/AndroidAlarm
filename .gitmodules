@@ -1,0 +1,3 @@
+[submodule "arduinoalarm/-f"]
+	path = arduinoalarm/-f
+	url = https://github.com/mik3y/usb-serial-for-android.git
