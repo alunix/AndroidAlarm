@@ -106,3 +106,6 @@ build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
+
+# Submodule
+arduinoalarm/usb-serial-for-android
