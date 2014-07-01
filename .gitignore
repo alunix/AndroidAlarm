@@ -109,3 +109,6 @@ gradle-app.setting
 
 # Submodule
 arduinoalarm/usb-serial-for-android
+
+# CAD Files
+~$*
