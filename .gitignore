@@ -108,7 +108,7 @@ build/
 gradle-app.setting
 
 # Submodule
-arduinoalarm/usb-serial-for-android
+arduinoalarm/forecastio-lib-java
 
 # CAD Files
 ~$*
