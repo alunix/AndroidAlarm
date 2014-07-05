@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/ArduinoAlarm.iml" filepath="$PROJECT_DIR$/ArduinoAlarm.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/forecastio-lib-java/forecastio-lib-java.iml" filepath="$PROJECT_DIR$/forecastio-lib-java/forecastio-lib-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usb-serial-for-android/usbSerialExamples/usbSerialExamples.iml" filepath="$PROJECT_DIR$/usb-serial-for-android/usbSerialExamples/usbSerialExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usb-serial-for-android/usbSerialForAndroid/usbSerialForAndroid.iml" filepath="$PROJECT_DIR$/usb-serial-for-android/usbSerialForAndroid/usbSerialForAndroid.iml" />
     </modules>
   </component>
 </project>

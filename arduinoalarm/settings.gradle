@@ -1,1 +1,3 @@
-include ':app', ':forecastio-lib-java'
+include ':app', ':forecastio-lib-java', ':usb-serial-for-android', ':usbSerialExamples', ':usbSerialForAndroid'
+project(':usbSerialExamples').projectDir = new File('usb-serial-for-android/usbSerialExamples')
+project(':usbSerialForAndroid').projectDir = new File('usb-serial-for-android/usbSerialForAndroid')

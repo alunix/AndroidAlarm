@@ -1,3 +1,6 @@
 [submodule "ArduinoAlarm/forecastio-lib-java"]
 	path = ArduinoAlarm/forecastio-lib-java
 	url = https://github.com/dvdme/forecastio-lib-java.git
+[submodule "ArduinoAlarm/usb-serial-for-android"]
+	path = ArduinoAlarm/usb-serial-for-android
+	url = https://github.com/mik3y/usb-serial-for-android.git
