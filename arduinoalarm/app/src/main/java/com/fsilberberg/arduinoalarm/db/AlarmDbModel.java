@@ -3,6 +3,7 @@ package com.fsilberberg.arduinoalarm.db;
 import com.fsilberberg.arduinoalarm.models.AlarmModel;
 import com.fsilberberg.arduinoalarm.models.Days;
 import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
 
 import java.util.Collection;
 import java.util.Date;
@@ -11,6 +12,7 @@ import java.util.LinkedList;
 /**
  * Created by 333fr_000 on 7/5/14.
  */
+@DatabaseTable(tableName = "alarms")
 public class AlarmDbModel {
 
     public static final String ID_COLUMN_NAME = "_id";

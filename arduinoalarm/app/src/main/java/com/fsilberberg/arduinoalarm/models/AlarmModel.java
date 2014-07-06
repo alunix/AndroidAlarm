@@ -8,7 +8,6 @@ import java.util.Date;
 /**
  * Created by 333fr_000 on 7/5/14.
  */
-@DatabaseTable(tableName = "alarms")
 public class AlarmModel {
     // Default id, never set intentionally in AlarmModel
     private int m_id = 0;
@@ -46,5 +45,14 @@ public class AlarmModel {
 
     public void setId(int id) {
         m_id = id;
+    }
+
+    /**
+     * Gets the UTC wall clock time of the next alarm for this model
+     * @return
+     */
+    public long getMillis() {
+        // TODO: Implement
+        return 0;
     }
 }
