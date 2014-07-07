@@ -1,5 +1,6 @@
 package com.fsilberberg.arduinoalarm;
 
+import com.fsilberberg.arduinoalarm.R;
 import com.fsilberberg.arduinoalarm.util.SystemUiHider;
 
 import android.annotation.TargetApi;
@@ -52,5 +53,9 @@ public class ClockActivity extends Activity {
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
                         | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
                         | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+    }
+
+    private void addAlarm() {
+
     }
 }

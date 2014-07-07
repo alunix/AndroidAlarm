@@ -2,6 +2,8 @@ package com.fsilberberg.arduinoalarm.models;
 
 import com.j256.ormlite.table.DatabaseTable;
 
+import org.joda.time.DateTime;
+
 import java.util.Collection;
 import java.util.Date;
 
@@ -11,15 +13,15 @@ import java.util.Date;
 public class AlarmModel {
     // Default id, never set intentionally in AlarmModel
     private int m_id = 0;
-    private Date m_alarmTime;
+    private DateTime m_alarmTime;
     private Collection<Days> m_activeDays;
     private boolean m_oneOff;
 
-    public Date getAlarmTime() {
+    public DateTime getAlarmTime() {
         return m_alarmTime;
     }
 
-    public void setAlarmTime(Date alarmTime) {
+    public void setAlarmTime(DateTime alarmTime) {
         m_alarmTime = alarmTime;
     }
 
@@ -51,8 +53,8 @@ public class AlarmModel {
      * Gets the UTC wall clock time of the next alarm for this model
      * @return
      */
-    public long getMillis() {
+    public DateTime getNextTime() {
         // TODO: Implement
-        return 0;
+        return null;
     }
 }

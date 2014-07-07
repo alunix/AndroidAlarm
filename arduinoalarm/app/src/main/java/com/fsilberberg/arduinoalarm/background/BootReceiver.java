@@ -29,7 +29,7 @@ public class BootReceiver extends BroadcastReceiver {
         for (AlarmModel alarm : alarms) {
             PendingIntent pi = PendingIntent.getBroadcast(context, alarm.getId(),
                     new Intent(context, AlarmReceiver.class), PendingIntent.FLAG_CANCEL_CURRENT);
-            alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarm.getMillis(), pi);
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarm.getNextTime().getMillis(), pi);
         }
     }
 }

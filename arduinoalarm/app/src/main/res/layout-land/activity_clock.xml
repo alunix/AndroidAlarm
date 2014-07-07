@@ -1,44 +1,69 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:id="@+id/top_layout"
     tools:context=".ClockActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/linearLayout">
+        android:orientation="horizontal">
+
         <TextClock
+            android:id="@+id/textClock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textClock"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:textSize="130sp"
-            android:format24Hour="H:mm:ss"
-            android:format12Hour="h:mm:ss"
-            android:fontFamily="sans-serif-condensed"
-            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:format12Hour="hh:mm"
+            android:format24Hour="HH:mm"
+            android:textSize="130dp"
+            android:textColor="@color/white"/>
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:format12Hour=":ss"
+            android:format24Hour=":ss"
+            android:textSize="70dp"
+            android:layout_marginTop="95dp"
+            android:textColor="@color/grey"/>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_margin="5dp"
-            android:id="@+id/alarm_layout"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Add Alarm"
+                android:textSize="20sp"
+                android:id="@+id/add_alarm_button"
+                android:textColor="@color/white"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/alarm_layout"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:id="@+id/weather_layout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/linearLayout"
         android:layout_alignParentStart="true"
-        android:id="@+id/weather_layout"/>
+        android:layout_below="@+id/linearLayout"
+        android:orientation="horizontal" />
 
 </RelativeLayout>

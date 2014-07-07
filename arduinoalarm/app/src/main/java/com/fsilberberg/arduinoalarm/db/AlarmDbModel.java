@@ -5,6 +5,8 @@ import com.fsilberberg.arduinoalarm.models.Days;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
+import org.joda.time.DateTime;
+
 import java.util.Collection;
 import java.util.Date;
 import java.util.LinkedList;
@@ -52,7 +54,7 @@ public class AlarmDbModel {
     }
 
     public AlarmDbModel(AlarmModel model) {
-        this.alarmTime = model.getAlarmTime();
+        this.alarmTime = model.getAlarmTime().toDate();
         this.oneOff = model.isOneOff();
         Collection<Days> days = model.getActiveDays();
         if (model.getId() != 0) id = model.getId();
@@ -93,7 +95,7 @@ public class AlarmDbModel {
 
     public static AlarmModel getModel(AlarmDbModel dbModel) {
         AlarmModel model = new AlarmModel();
-        model.setAlarmTime(dbModel.alarmTime);
+        model.setAlarmTime(new DateTime(dbModel.alarmTime));
         model.setOneOff(dbModel.oneOff);
         model.setId(dbModel.id);
         Collection<Days> activeDays = new LinkedList<>();
